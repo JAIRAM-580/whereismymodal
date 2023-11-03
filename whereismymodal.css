@@ -3,7 +3,7 @@ body{
     margin: 0px;
     box-sizing: border-box;
     position: relative;
-    background:url("./images/naturebg.jpg") no-repeat center/cover;
+    background:url("./images/natureLQ.jpg") no-repeat center/cover;
     height:100vh;
 }
 .open-btn{
