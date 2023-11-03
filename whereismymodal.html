@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whereismymodal</title>
+    <link rel="stylesheet" href="whereismymodal.css">
+    <!-- <script src="whereismymodal.js"></script> -->
+</head>
+<body>
+
+    <button class="open-btn"> 
+        <p>Where Is my Modal</p>
+    </button>
+
+    <div id="modal-container">
+        <div id="modal">
+            Here Iam
+            <div class="close-btn"> <b>&times;</b></div>
+        </div>
+    </div>
+
+    <script>
+
+        //variables
+
+        let openbtn = document.querySelector('.open-btn')
+        let closebtn = document.querySelector('.close-btn')
+        let modalcontainer = document.querySelector('#modal-container')
+
+        //events
+        openbtn.addEventListener('click',function(){
+            modalcontainer.style.display='block';
+        })
+
+        closebtn.addEventListener('click',function(){
+        modalcontainer.style.display = 'none'
+        })
+        
+        window.addEventListener('click',function(e){
+        if(e.target === modalcontainer){
+        modalcontainer.style.display = 'none'
+        }
+        })
+
+    </script>
+</body>
+</html>

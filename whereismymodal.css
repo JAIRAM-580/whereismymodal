@@ -1,0 +1,67 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    position: relative;
+    background:url("./images/naturebg.jpg") no-repeat center/cover;
+    height:100vh;
+}
+.open-btn{
+    position: absolute;
+    top:400px;
+    left:100px;
+    background-color: transparent;
+    border-color:rgba(0,0,0,5);
+    cursor: pointer;
+    font-size:medium;
+
+
+}
+.open-btn:hover{
+    background-color:rgba(255,255,255,0.4);
+}
+#modal-container{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: none;
+    background-color:rgba(0,0,0,0.5)
+}
+#modal{
+    background-color:rgba(255,255,255,0.8);
+    height:45px;
+    width: 120px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-size: 1.1rem;
+    top:50%;
+    left: 50%;
+    animation-name: animatemodal;
+    animation-duration:0.3s;
+}
+.close-btn{
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+}
+
+
+@keyframes animatemodal {
+    from{
+        top:-300px;
+        opacity:0;
+    }
+    to{
+        top:50%;
+        opacity: 1;
+    }
+}
+
+
+
+
